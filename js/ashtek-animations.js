@@ -249,11 +249,11 @@
         
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 100) {
-                header.style.background = 'rgba(15, 23, 36, 0.95)';
-                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+                header.style.background = 'linear-gradient(135deg, rgba(255, 252, 250, 0.98) 0%, rgba(255, 245, 235, 0.98) 100%)';
+                header.style.boxShadow = '0 4px 20px rgba(255, 111, 0, 0.12)';
             } else {
-                header.style.background = 'rgba(15, 23, 36, 0.85)';
-                header.style.boxShadow = 'none';
+                header.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 245, 235, 0.95) 100%)';
+                header.style.boxShadow = '0 2px 10px rgba(255, 111, 0, 0.08)';
             }
         });
         
@@ -414,7 +414,132 @@
         }
         
         // ====================================
-        // 15. PERFORMANCE OPTIMIZATION
+        // 15. ANIMATED GRADIENT BACKGROUND
+        // ====================================
+        
+        const heroBgGradient = document.querySelector('.hero-bg-gradient');
+        if (heroBgGradient) {
+            let mouseX = 0;
+            let mouseY = 0;
+            
+            document.addEventListener('mousemove', function(e) {
+                mouseX = e.clientX / window.innerWidth;
+                mouseY = e.clientY / window.innerHeight;
+                
+                const xPos = -20 + (mouseX * 10);
+                const yPos = -50 + (mouseY * 10);
+                
+                heroBgGradient.style.transform = `translate(${xPos}%, ${yPos}%)`;
+            });
+        }
+        
+        // ====================================
+        // 16. SECTION REVEAL WITH ORANGE ACCENT
+        // ====================================
+        
+        const revealSections = document.querySelectorAll('section');
+        
+        const sectionObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-revealed');
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        });
+        
+        revealSections.forEach(function(section) {
+            sectionObserver.observe(section);
+        });
+        
+        // ====================================
+        // 17. FLOATING ANIMATION ON TECH CARDS
+        // ====================================
+        
+        const techCards = document.querySelectorAll('.tech-logo-card');
+        
+        techCards.forEach(function(card, index) {
+            const delay = index * 0.1;
+            const duration = 3 + (index % 3);
+            
+            card.style.animation = `float ${duration}s ease-in-out ${delay}s infinite`;
+        });
+        
+        // ====================================
+        // 18. PARALLAX SCROLL EFFECT
+        // ====================================
+        
+        const parallaxElements = document.querySelectorAll('.step-number, .service-icon');
+        
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            
+            parallaxElements.forEach(function(element, index) {
+                const rect = element.getBoundingClientRect();
+                const elementTop = rect.top + scrolled;
+                const speed = 0.05 + (index % 3) * 0.02;
+                
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    const yPos = (scrolled - elementTop) * speed;
+                    element.style.transform = `translateY(${yPos}px)`;
+                }
+            });
+        });
+        
+        // ====================================
+        // 19. ORANGE GLOW ON HOVER - DYNAMIC
+        // ====================================
+        
+        const glowElements = document.querySelectorAll('.btn-primary, .process-step, .service-card');
+        
+        glowElements.forEach(function(element) {
+            element.addEventListener('mouseenter', function(e) {
+                const glow = document.createElement('div');
+                glow.className = 'orange-glow-effect';
+                this.appendChild(glow);
+                
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                glow.style.left = x + 'px';
+                glow.style.top = y + 'px';
+                
+                setTimeout(function() {
+                    glow.remove();
+                }, 600);
+            });
+        });
+        
+        // ====================================
+        // 20. ANIMATED PARTICLES BACKGROUND
+        // ====================================
+        
+        // Add particles to all major sections
+        const particleSections = document.querySelectorAll('.hero-section, .services-section, .process-section, .portfolio-section, .about-section, .contact-section');
+        
+        particleSections.forEach(function(section) {
+            // Make section position relative if not already
+            if (getComputedStyle(section).position === 'static') {
+                section.style.position = 'relative';
+            }
+            
+            // Create floating particles (8 per section for better performance)
+            const particleCount = 8;
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'floating-particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (6 + Math.random() * 4) + 's';
+                section.appendChild(particle);
+            }
+        });
+        
+        // ====================================
+        // 21. PERFORMANCE OPTIMIZATION
         // ====================================
         
         // Debounce function for scroll events
@@ -429,13 +554,6 @@
                 timeout = setTimeout(later, wait);
             };
         }
-        
-        // Apply debounce to scroll-heavy functions
-        const debouncedScrollHandler = debounce(function() {
-            // Add any scroll-heavy operations here
-        }, 100);
-        
-        window.addEventListener('scroll', debouncedScrollHandler);
         
         // ====================================
         // Console Message

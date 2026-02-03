@@ -767,7 +767,7 @@ section.section-revealed {
 .tech-logo-card i {
     color: var(--primary-orange);
     transition: color 0.3s ease;
-    font-size: 48px;
+    font-size: 48px !important;
     filter: drop-shadow(0 2px 8px rgba(255, 111, 0, 0.2));
 }
 

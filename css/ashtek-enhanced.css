@@ -1164,8 +1164,7 @@ section.section-revealed {
     border: 1px solid var(--border-subtle);
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-    color: var(--text-muted);
+    color: var(--primary-orange);
     font-size: 20px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -1215,6 +1214,11 @@ section.section-revealed {
 .footer-brand {
     font-size: 24px;
     font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-brand .brand-minds {
+    color: #ffffff;
 }
 
 .footer-description {

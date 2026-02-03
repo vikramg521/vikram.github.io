@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>ASHTek Minds</title>
+		<meta name="description" content="Responsive HTML5 Template">
+		<meta name="author" content="webthemez">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<head>
+			<meta charset="utf-8">
+			<title>AshTek</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- Minimal inline styles for a clean one-page layout -->
+			<style>
+				:root{
+					--bg-1:#0f1724; /* deep navy */
+					--bg-2:#141827; /* slightly lighter */
+					--accent:#2dd4bf; /* teal */
+					--muted:#94a3b8;
+					--card-bg: rgba(255,255,255,0.03);
+				}
+				html,body{height:100%;margin:0;font-family:Helvetica, Arial, sans-serif;color:#e6eef6;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));}
+				.header{position:fixed;top:24px;left:32px;z-index:20;display:flex;align-items:center;gap:12px}
+				.header img{height:44px;width:auto;display:block}
+				.brand{font-weight:700;font-size:28px;letter-spacing:0.6px;color:#fff}
+				.brand .accent{color:var(--accent)}
+				.hero{min-height:84vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+				.hero-inner{max-width:1100px}
+				.h-title{font-size:56px;line-height:1.03;margin:0 0 18px;font-weight:700}
+				.h-sub{color:var(--muted);font-size:18px;margin:0 0 28px}
+				.cta{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff;padding:10px 18px;border-radius:6px;cursor:pointer}
+				.features{display:flex;gap:18px;max-width:1100px;margin:48px auto 72px;padding:0 20px;justify-content:space-between}
+				.card{flex:1;background:var(--card-bg);padding:28px;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 8px 18px rgba(2,6,23,0.6);text-align:center}
+				.card-emoji{font-size:34px;margin-bottom:12px}
+				.card h3{margin:6px 0 8px;color:#fff}
+				.card p{color:var(--muted);font-size:14px;margin:0}
+				.footer-note{text-align:center;color:var(--muted);font-size:13px;margin-bottom:36px}
+				@media (max-width:860px){.features{flex-direction:column}.h-title{font-size:38px}}
+			</style>
+		</head>
+
+		<body>
+				<!DOCTYPE html>
+				<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+				<!--[if !IE]><!-->
+				<html lang="en">
+				<!--<![endif]-->
+				<head>
+					<meta charset="utf-8">
+					<title>AshTek</title>
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+
+					<link rel="shortcut icon" href="images/favicon.ico">
+					<!-- Use existing site styles so colors match your current theme -->
+					<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+					<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+					<link href="css/animations.css" rel="stylesheet">
+					<link href="css/style.css" rel="stylesheet">
+					<link href="css/custom.css" rel="stylesheet">
+
+					<style>
+						/* small overrides to keep layout simple while reusing your theme colors */
+						:root{--accent:#FF6F00}
+						html,body{height:100%;margin:0;color:#e6eef6;background:linear-gradient(180deg,#0f1724,#141827);font-family: 'Open Sans', sans-serif}
+						.header{position:fixed;top:22px;left:28px;z-index:20;display:flex;align-items:center;gap:12px}
+						.header img{height:48px;width:auto}
+						.brand{font-weight:700;font-size:28px;color:#fff}
+						.brand .brand-highlight{color:var(--accent)}
+						.hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:48px}
+						.hero-inner{max-width:1100px}
+						.h-title{font-size:52px;line-height:1.02;margin:0 0 18px;font-weight:700}
+						.h-sub{color:#94a3b8;font-size:18px;margin:0 0 28px}
+						.cta{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff;padding:10px 18px;border-radius:6px}
+						.features{display:flex;gap:18px;max-width:1100px;margin:48px auto 72px;padding:0 20px;justify-content:space-between}
+						.card{flex:1;background:rgba(255,255,255,0.03);padding:28px;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 8px 18px rgba(2,6,23,0.6);text-align:center}
+						.card-emoji{font-size:34px;margin-bottom:12px}
+						.card h3{margin:6px 0 8px;color:#fff}
+						.card p{color:#94a3b8;font-size:14px;margin:0}
+						.footer-note{text-align:center;color:#94a3b8;font-size:13px;margin-bottom:36px}
+						@media (max-width:860px){.features{flex-direction:column}.h-title{font-size:38px}}
+					</style>
+				</head>
+
+				<body>
+					<header class="header">
+						<a href="#home" class="logo"><img src="images/logo_ashr.png" alt="AshTek logo"></a>
+						<div class="brand"><span class="brand-highlight">Ash</span>Tek</div>
+					</header>
+
+					<section class="hero" id="home">
+						<div class="hero-inner">
+							<h1 class="h-title">The AI-native reliability platform that safeguards your infrastructure and ensures uptime</h1>
+							<p class="h-sub">Prevent outages before they happen. Simple, reliable, and built for scale.</p>
+							<button class="cta" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Coming Soon</button>
+						</div>
+					</section>
+
+					<section id="features" class="features">
+						<div class="card">
+							<div class="card-emoji">🛡️</div>
+							<h3>Proactive Protection</h3>
+							<p>Detect and mitigate issues before they impact users.</p>
+						</div>
+						<div class="card">
+							<div class="card-emoji">⚡</div>
+							<h3>Zero Downtime</h3>
+							<p>Automated responses reduce downtime and keep services online.</p>
+						</div>
+						<div class="card">
+							<div class="card-emoji">🧠</div>
+							<h3>AI-Native</h3>
+							<p>Smart anomaly detection powered by modern ML techniques.</p>
+						</div>
+					</section>
+
+					<p class="footer-note">© 2025 AshTek — All rights reserved</p>
+
+					<!-- Keep the chatbot embed (restored) -->
+					<script>
+					window.ChatbotWidgetConfig = {
+						apiUrl: 'https://oorexxc6vc.execute-api.us-east-1.amazonaws.com/prod',
+						apiKey: 'kVyI-rhIUUP9hwD5Tm8hcHwAbYPryjCEAVmioooeLuY',
+						domain: 'example.com',
+						position: 'bottom-right',
+						assistantName: 'EVA',
+						primaryColor: '#FF6F00'
+					};
+					</script>
+					<script src="https://chatbot-widget-assets-246990689478.s3.amazonaws.com/widget-enhanced.js"></script>
+
+					<script>
+					// tiny smooth-scroll helper
+					document.querySelectorAll('a[href^="#"]').forEach(function(a){
+						a.addEventListener('click',function(e){
+							e.preventDefault();
+							document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+						});
+					});
+					</script>
+
+				</body>
+				</html>

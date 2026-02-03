@@ -1,153 +1,676 @@
 <!DOCTYPE html>
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<title>ASHTek Minds</title>
-		<meta name="description" content="Responsive HTML5 Template">
-		<meta name="author" content="webthemez">
+<head>
+    <meta charset="utf-8">
+    <title>AshtekMinds - AI-Powered Software Solutions</title>
+    <meta name="description" content="AshtekMinds delivers cutting-edge AI and software development services">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Swiper CSS for Carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/ashtek-enhanced.css" rel="stylesheet">
+</head>
 
-		<!-- Mobile Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
- 
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
-		<head>
-			<meta charset="utf-8">
-			<title>AshTek</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-
-			<!-- Minimal inline styles for a clean one-page layout -->
-			<style>
-				:root{
-					--bg-1:#0f1724; /* deep navy */
-					--bg-2:#141827; /* slightly lighter */
-					--accent:#2dd4bf; /* teal */
-					--muted:#94a3b8;
-					--card-bg: rgba(255,255,255,0.03);
-				}
-				html,body{height:100%;margin:0;font-family:Helvetica, Arial, sans-serif;color:#e6eef6;background:linear-gradient(180deg,var(--bg-1),var(--bg-2));}
-				.header{position:fixed;top:24px;left:32px;z-index:20;display:flex;align-items:center;gap:12px}
-				.header img{height:44px;width:auto;display:block}
-				.brand{font-weight:700;font-size:28px;letter-spacing:0.6px;color:#fff}
-				.brand .accent{color:var(--accent)}
-				.hero{min-height:84vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
-				.hero-inner{max-width:1100px}
-				.h-title{font-size:56px;line-height:1.03;margin:0 0 18px;font-weight:700}
-				.h-sub{color:var(--muted);font-size:18px;margin:0 0 28px}
-				.cta{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff;padding:10px 18px;border-radius:6px;cursor:pointer}
-				.features{display:flex;gap:18px;max-width:1100px;margin:48px auto 72px;padding:0 20px;justify-content:space-between}
-				.card{flex:1;background:var(--card-bg);padding:28px;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 8px 18px rgba(2,6,23,0.6);text-align:center}
-				.card-emoji{font-size:34px;margin-bottom:12px}
-				.card h3{margin:6px 0 8px;color:#fff}
-				.card p{color:var(--muted);font-size:14px;margin:0}
-				.footer-note{text-align:center;color:var(--muted);font-size:13px;margin-bottom:36px}
-				@media (max-width:860px){.features{flex-direction:column}.h-title{font-size:38px}}
-			</style>
-		</head>
-
-		<body>
-				<!DOCTYPE html>
-				<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-				<!--[if !IE]><!-->
-				<html lang="en">
-				<!--<![endif]-->
-				<head>
-					<meta charset="utf-8">
-					<title>AshTek</title>
-					<meta name="viewport" content="width=device-width, initial-scale=1">
-
-					<link rel="shortcut icon" href="images/favicon.ico">
-					<!-- Use existing site styles so colors match your current theme -->
-					<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-					<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
-					<link href="css/animations.css" rel="stylesheet">
-					<link href="css/style.css" rel="stylesheet">
-					<link href="css/custom.css" rel="stylesheet">
-
-					<style>
-						/* small overrides to keep layout simple while reusing your theme colors */
-						:root{--accent:#FF6F00}
-						html,body{height:100%;margin:0;color:#e6eef6;background:linear-gradient(180deg,#0f1724,#141827);font-family: 'Open Sans', sans-serif}
-						.header{position:fixed;top:22px;left:28px;z-index:20;display:flex;align-items:center;gap:12px}
-						.header img{height:48px;width:auto}
-						.brand{font-weight:700;font-size:28px;color:#fff}
-						.brand .brand-highlight{color:var(--accent)}
-						.hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:48px}
-						.hero-inner{max-width:1100px}
-						.h-title{font-size:52px;line-height:1.02;margin:0 0 18px;font-weight:700}
-						.h-sub{color:#94a3b8;font-size:18px;margin:0 0 28px}
-						.cta{background:transparent;border:1px solid rgba(255,255,255,0.12);color:#fff;padding:10px 18px;border-radius:6px}
-						.features{display:flex;gap:18px;max-width:1100px;margin:48px auto 72px;padding:0 20px;justify-content:space-between}
-						.card{flex:1;background:rgba(255,255,255,0.03);padding:28px;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 8px 18px rgba(2,6,23,0.6);text-align:center}
-						.card-emoji{font-size:34px;margin-bottom:12px}
-						.card h3{margin:6px 0 8px;color:#fff}
-						.card p{color:#94a3b8;font-size:14px;margin:0}
-						.footer-note{text-align:center;color:#94a3b8;font-size:13px;margin-bottom:36px}
-						@media (max-width:860px){.features{flex-direction:column}.h-title{font-size:38px}}
-					</style>
-				</head>
-
-				<body>
-					<header class="header">
-						<a href="#home" class="logo"><img src="images/logo_ashr.png" alt="AshTek logo"></a>
-						<div class="brand"><span class="brand-highlight">Ash</span>Tek</div>
-					</header>
-
-					<section class="hero" id="home">
-						<div class="hero-inner">
-							<h1 class="h-title">The AI-native reliability platform that safeguards your infrastructure and ensures uptime</h1>
-							<p class="h-sub">Prevent outages before they happen. Simple, reliable, and built for scale.</p>
-							<button class="cta" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">Coming Soon</button>
-						</div>
-					</section>
-
-					<section id="features" class="features">
-						<div class="card">
-							<div class="card-emoji">🛡️</div>
-							<h3>Proactive Protection</h3>
-							<p>Detect and mitigate issues before they impact users.</p>
-						</div>
-						<div class="card">
-							<div class="card-emoji">⚡</div>
-							<h3>Zero Downtime</h3>
-							<p>Automated responses reduce downtime and keep services online.</p>
-						</div>
-						<div class="card">
-							<div class="card-emoji">🧠</div>
-							<h3>AI-Native</h3>
-							<p>Smart anomaly detection powered by modern ML techniques.</p>
-						</div>
-					</section>
-
-					<p class="footer-note">© 2025 AshTek — All rights reserved</p>
-
-					<!-- Keep the chatbot embed (restored) -->
-					<script>
-					window.ChatbotWidgetConfig = {
-						apiUrl: 'https://oorexxc6vc.execute-api.us-east-1.amazonaws.com/prod',
-						apiKey: 'kVyI-rhIUUP9hwD5Tm8hcHwAbYPryjCEAVmioooeLuY',
-						domain: 'example.com',
-						position: 'bottom-right',
-						assistantName: 'EVA',
-						primaryColor: '#FF6F00'
-					};
-					</script>
-					<script src="https://chatbot-widget-assets-246990689478.s3.amazonaws.com/widget-enhanced.js"></script>
-
-					<script>
-					// tiny smooth-scroll helper
-					document.querySelectorAll('a[href^="#"]').forEach(function(a){
-						a.addEventListener('click',function(e){
-							e.preventDefault();
-							document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-						});
-					});
-					</script>
-
-				</body>
-				</html>
+<body class="ashtek-page">
+    
+    <!-- Fixed Header with Logo -->
+    <header class="ashtek-header">
+        <div class="ashtek-logo-wrapper">
+            <img src="images/logo_ashr.png" alt="AshtekMinds Logo" class="ashtek-logo-img">
+            <div class="ashtek-brand-name">
+                <span class="brand-ash">Ashtek</span><span class="brand-minds">Minds</span>
+            </div>
+        </div>
+        <nav class="ashtek-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#process" class="nav-link">Process</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    
+    <!-- Section 1: Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="22" height="22" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.498 17.4897C17.7279 18.1109 18.2177 18.6005 18.8389 18.8306L26.2441 21.5708L18.8389 24.311C18.2178 24.541 17.728 25.0308 17.498 25.6519L14.7578 33.0571L12.0176 25.6519C11.7876 25.0307 11.298 24.5409 10.6768 24.311L3.27246 21.5708L10.6768 18.8306C11.298 18.6006 11.7876 18.111 12.0176 17.4897L14.7578 10.0854L17.498 17.4897Z" stroke="#FF6F00" stroke-width="2"/>
+                        <path d="M26.6077 1.7277C26.8271 1.13473 27.6658 1.13473 27.8852 1.7277L28.9774 4.67911C29.0464 4.86554 29.1933 5.01253 29.3798 5.08152L32.3312 6.17364C32.9242 6.39306 32.9242 7.23175 32.3312 7.45117L29.3798 8.54329C29.1933 8.61227 29.0464 8.75926 28.9774 8.94569L27.8852 11.8971C27.6658 12.4901 26.8271 12.4901 26.6077 11.8971L25.5156 8.94569C25.4466 8.75926 25.2996 8.61227 25.1132 8.54329L22.1618 7.45117C21.5688 7.23175 21.5688 6.39306 22.1618 6.17364L25.1132 5.08152C25.2996 5.01253 25.4466 4.86554 25.5156 4.67911L26.6077 1.7277Z" fill="#FF6F00"/>
+                    </svg>
+                    <span>AI-Powered Innovation</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transform Your Business with <br>
+                    <span class="highlight-orange">AshtekMinds</span> Solutions
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Expert software development, AI solutions, and cloud services 
+                    that drive real results. Partner with us to build the future.
+                </p>
+                
+                <div class="hero-cta-wrapper">
+                    <button class="btn-primary-orange" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                        Get Started
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn-secondary-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+                        View Services
+                    </button>
+                </div>
+                
+                <!-- Stats Bar -->
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="2">0</h3>
+                        <p class="stat-label">Projects Delivered</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="2">0</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa fa-clock-o"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="24">0</h3>
+                        <p class="stat-label">24/7 Support</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="100">0</h3>
+                        <p class="stat-label">Success Rate %</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 2: Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight-orange">Services</span></h2>
+                <p class="section-subtitle">Comprehensive technology solutions tailored to your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🧠</div>
+                    <h3 class="service-title">AI & Machine Learning</h3>
+                    <p class="service-description">Custom AI models, predictive analytics, and intelligent automation solutions that drive efficiency</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3 class="service-title">Cloud Solutions</h3>
+                    <p class="service-description">AWS, Azure, and GCP deployment, migration, optimization, and managed cloud services</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title">Web & Mobile Development</h3>
+                    <p class="service-description">Responsive web applications, iOS/Android development, and progressive web apps</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">Data Engineering</h3>
+                    <p class="service-description">ETL pipelines, data warehousing, real-time analytics, and business intelligence</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title">DevOps & Automation</h3>
+                    <p class="service-description">CI/CD pipelines, infrastructure as code, containerization, and automated deployment</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-title">Consulting & Strategy</h3>
+                    <p class="service-description">Technology roadmaps, architecture reviews, and digital transformation consulting</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 3: How It Works / Process -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How We <span class="highlight-orange">Work</span></h2>
+                <p class="section-subtitle">Our proven 4-step process for delivering exceptional results</p>
+            </div>
+            
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Discovery & Consultation</h3>
+                        <p class="step-description">We begin by understanding your business goals, challenges, and technical requirements through detailed consultation sessions.</p>
+                    </div>
+                    <div class="step-image">
+                        <i class="fa fa-search fa-3x"></i>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Custom Solution Design</h3>
+                        <p class="step-description">Our expert team designs a tailored solution architecture that aligns with your objectives and scales with your growth.</p>
+                    </div>
+                    <div class="step-image">
+                        <i class="fa fa-lightbulb-o fa-3x"></i>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Development & Implementation</h3>
+                        <p class="step-description">We build and deploy your solution using best practices, agile methodologies, and continuous quality assurance.</p>
+                    </div>
+                    <div class="step-image">
+                        <i class="fa fa-code fa-3x"></i>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Support & Optimization</h3>
+                        <p class="step-description">Post-launch support, performance monitoring, and continuous optimization to ensure long-term success.</p>
+                    </div>
+                    <div class="step-image">
+                        <i class="fa fa-rocket fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 4: Technologies / Portfolio Gallery -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container-fluid">
+            <div class="section-header text-center">
+                <h2 class="section-title">Technologies We <span class="highlight-orange">Master</span></h2>
+                <p class="section-subtitle">Cutting-edge tools and frameworks powering our solutions</p>
+            </div>
+            
+            <!-- Infinite Scroll Tech Logos -->
+            <div class="tech-scroll-wrapper">
+                <div class="tech-scroll-track">
+                    <!-- First set of logos -->
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-python fa-3x"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-react fa-3x"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-node-js fa-3x"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-aws fa-3x"></i>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-docker fa-3x"></i>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-database fa-3x"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-angular fa-3x"></i>
+                            <span>Angular</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-java fa-3x"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <!-- Duplicate set for seamless loop -->
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-python fa-3x"></i>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-react fa-3x"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-node-js fa-3x"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-aws fa-3x"></i>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-docker fa-3x"></i>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-database fa-3x"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-angular fa-3x"></i>
+                            <span>Angular</span>
+                        </div>
+                    </div>
+                    <div class="tech-logo-item">
+                        <div class="tech-logo-card">
+                            <i class="fa fa-java fa-3x"></i>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Carousel -->
+            <div class="portfolio-carousel-section">
+                <h3 class="carousel-title">Featured <span class="highlight-orange">Projects</span></h3>
+                <div class="swiper portfolioSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img src="images/portfolio-1.jpg" alt="E-commerce Platform">
+                                    <div class="portfolio-overlay">
+                                        <h4>E-commerce Platform</h4>
+                                        <p>Full-stack online shopping solution</p>
+                                        <div class="tech-tags">
+                                            <span class="tag">React</span>
+                                            <span class="tag">Node.js</span>
+                                            <span class="tag">AWS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img src="images/portfolio-2.jpg" alt="AI Analytics Dashboard">
+                                    <div class="portfolio-overlay">
+                                        <h4>AI Analytics Dashboard</h4>
+                                        <p>Real-time data visualization platform</p>
+                                        <div class="tech-tags">
+                                            <span class="tag">Python</span>
+                                            <span class="tag">TensorFlow</span>
+                                            <span class="tag">React</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img src="images/portfolio-3.jpg" alt="Mobile Banking App">
+                                    <div class="portfolio-overlay">
+                                        <h4>Mobile Banking App</h4>
+                                        <p>Secure financial transactions app</p>
+                                        <div class="tech-tags">
+                                            <span class="tag">React Native</span>
+                                            <span class="tag">Firebase</span>
+                                            <span class="tag">Security</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-image">
+                                    <img src="images/portfolio-4.jpg" alt="Cloud Migration">
+                                    <div class="portfolio-overlay">
+                                        <h4>Enterprise Cloud Migration</h4>
+                                        <p>Seamless infrastructure modernization</p>
+                                        <div class="tech-tags">
+                                            <span class="tag">AWS</span>
+                                            <span class="tag">Kubernetes</span>
+                                            <span class="tag">DevOps</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 5: About Us -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content-wrapper">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">About <span class="highlight-orange">AshtekMinds</span></h2>
+                    </div>
+                    <p class="about-paragraph">
+                        Founded with a vision to transform businesses through technology, AshtekMinds has grown into a trusted partner 
+                        for companies seeking innovative software solutions. Our team of expert developers, AI specialists, and cloud 
+                        architects brings decades of combined experience to every project.
+                    </p>
+                    <p class="about-paragraph">
+                        We believe in the power of <span class="text-orange">cutting-edge technology</span> combined with 
+                        <span class="text-orange">human creativity</span> to solve complex business challenges. Whether you're a 
+                        startup looking to build your MVP or an enterprise seeking digital transformation, we have the expertise to 
+                        bring your vision to life.
+                    </p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <i class="fa fa-check-circle text-orange"></i>
+                            <span>Innovation-Driven Development</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fa fa-check-circle text-orange"></i>
+                            <span>Client-Centric Approach</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fa fa-check-circle text-orange"></i>
+                            <span>Quality & Excellence</span>
+                        </div>
+                        <div class="value-item">
+                            <i class="fa fa-check-circle text-orange"></i>
+                            <span>Agile & Transparent Process</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn-primary-orange">Let's Work Together</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/section-image-1.png" alt="AshtekMinds Team">
+                        <div class="image-accent-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 6: Contact Us -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Get In <span class="highlight-orange">Touch</span></h2>
+                <p class="section-subtitle">Let's discuss how we can help transform your business</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="contact-badge">
+                        <i class="fa fa-envelope"></i>
+                        <span>Let's Build Something Amazing Together</span>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="ai">AI & Machine Learning</option>
+                                <option value="cloud">Cloud Solutions</option>
+                                <option value="web">Web & Mobile Development</option>
+                                <option value="data">Data Engineering</option>
+                                <option value="devops">DevOps & Automation</option>
+                                <option value="consulting">Consulting & Strategy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary-orange btn-block">
+                            Send Message
+                            <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h3 class="contact-info-title">Contact Information</h3>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:info@ashtekminds.com">info@ashtekminds.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+918667298937">+91 86672 98937</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/company/ashtekminds" target="_blank">linkedin.com/company/ashtekminds</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 7: Footer -->
+    <footer class="ashtek-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Logo & Description -->
+                <div class="footer-column">
+                    <div class="footer-logo-wrapper">
+                        <img src="images/logo_ashr.png" alt="AshtekMinds" class="footer-logo">
+                        <div class="footer-brand">
+                            <span class="brand-ash">Ashtek</span><span class="brand-minds">Minds</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Delivering innovative software solutions and AI-powered services to transform businesses worldwide.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Company Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">AI & Machine Learning</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">DevOps</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Legal & Contact -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">Legal & Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="mailto:contact@ashtekminds.com"><i class="fa fa-envelope"></i> Email Us</a></li>
+                        <li><a href="https://linkedin.com/company/ashtekminds" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 AshtekMinds. All rights reserved.</p>
+                <p class="tagline">Built with <span class="text-orange">❤️</span> and cutting-edge technology</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+    
+    <!-- jQuery -->
+    <script src="plugins/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom Animations -->
+    <script src="js/ashtek-animations.js"></script>
+    
+    <!-- Chatbot Widget (Restored) -->
+    <script>
+        window.ChatbotWidgetConfig = {
+            apiUrl: 'https://oorexxc6vc.execute-api.us-east-1.amazonaws.com/prod',
+            apiKey: 'kVyI-rhIUUP9hwD5Tm8hcHwAbYPryjCEAVmioooeLuY',
+            domain: 'example.com',
+            position: 'bottom-right',
+            assistantName: 'EVA',
+            primaryColor: '#FF6F00'
+        };
+    </script>
+    <script src="https://chatbot-widget-assets-246990689478.s3.amazonaws.com/widget-enhanced.js"></script>
+    
+</body>
+</html>
